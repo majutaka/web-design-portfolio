@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f3e5; 
+    color: #4e4b31; 
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+ header {
+    position: relative;
+    background-color: #4e4b31; 
+    color: #f5f3e5; 
+    padding: 250px 0;
+    text-align: center;
+    background-image: url('imagem7.jpg'); 
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 5s ease-out;
+    border-bottom: 5px solid #d2c29f; 
+}
+
+
+    
+header h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-out;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #f5f3e5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8b9f5d; }
+
+.section {
+    padding: 60px 0;
+    animation: slideUp 1s ease-out;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4e4b31;
+    animation: fadeIn 1s ease-out;
+}
+
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #5c5a44;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.galeria-item {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.1);
+}
+
+.galeria-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-link {
+    color: #4e4b31;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #d2c29f;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #8b9f5d;
+}
+
+footer {
+    background: #4e4b31;
+    color: #f5f3e5;
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeIn 2s ease-out;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+  animation: fadeIn 2s ease;
+}
+
+.formulario-contato label {
+  font-weight: bold;
+  color: #4e4b31;
+}
+
+.formulario-contato button:hover {
+  background-color: #6f804a;
+  transform: scale(1.02);
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fdfaf2;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  border-color: #8b9f5d;
+  outline: none;
+}
+
+.formulario-contato button {
+  background-color: #8b9f5d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+  background-color: #6f804a;
+}
+
+.nav {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.menu li a {
+  color: #f5f3e5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #8b9f5d;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #f5f3e5;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 10;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+
+
+
